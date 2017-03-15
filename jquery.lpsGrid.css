@@ -1,0 +1,315 @@
+/*LPS Grid*/
+.lpsGrid {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 12px;
+    width: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lpsGrid .lps-header {
+    background: #6495ad;
+    color: #fff;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+.lpsGrid .cell {
+    float: left;
+    color: #7b7b7b;
+    font-weight: normal;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+}
+.lpsGrid .lps-header .cell {
+    color: #fff;
+    text-decoration: none;
+    border-left: 1px solid #fff;
+}
+.lpsGrid .lps-header .cell:first-child {
+    border-left: none;
+}
+.lpsGrid .disabled .cell {
+    color: #ccc;
+}
+.lpsGrid .sortable {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.lpsGrid .cell a {
+    color: #528fba !important;
+    text-decoration: underline;
+}
+
+.lpsGrid .asc span{
+    background: url('../../images/arrow-up.png') no-repeat right center;
+    padding-right: 13px;
+}
+.lpsGrid .desc span{
+    background: url('../../images/arrow-down.png') no-repeat right center;
+    padding-right: 13px;
+}
+.lpsGrid .cell a:hover {
+    color: #99C1E2;
+}
+
+.lpsGrid .lps-content .lps-row {
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 11px;
+}
+.lpsGrid .lps-content .lps-row .cell {
+    padding: 5px;
+}
+.lps-row .td-actions .aButton {
+    margin-right: 5px;
+}
+.lps-loader {
+    width: 100%;
+    height: 150px;
+    background: url('../../images/loading.gif') no-repeat center center;
+}
+.popup-loader {
+    width: 150px;
+    height: 100px;
+    background: url('../../images/loading.gif') no-repeat center center;
+}
+
+.lpsGrid-msg {
+    float: right;
+}
+.lpsGrid-msg .successMessage {
+    margin: 8px 10px 0 0;
+}
+.lpsGrid .no-configuration {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    color: #9a9a9a;
+    border-bottom: 1px solid #ccc;
+}
+.h3 {
+    font-family: MyriadWebPro-Condensed, Arial;
+    font-weight: bold;
+    color: #52738F;
+    font-size: 16px;
+}
+.lps-pager span {
+    float: left;
+}
+.lps-pager span.show {
+    margin: 0 20px;
+}
+.lps-pager .next-link {
+    background: url('../../images/leadviewer/next.png') no-repeat 0 0;
+    width: 7px;
+    height: 12px;
+}
+.lps-pager .prev-link {
+    background: url('../../images/leadviewer/prev.png') no-repeat 0 0;
+    width: 7px;
+    height: 12px;
+}
+.lps-pager .first-link {
+    background: url('../../images/leadviewer/first.png') no-repeat 0 0;
+    width: 12px;
+    height: 12px;
+}
+.lps-pager .last-link {
+    background: url('../../images/leadviewer/last.png') no-repeat 0 0;
+    width: 12px;
+    height: 12px;
+}
+.refresh-icon {
+    cursor: pointer;
+}
+/*
+.lps-pager .next {
+    background-position: -19px 0;
+}
+.lps-pager .next-dis {
+    background-position: -19px -14px !important;
+}
+.lps-pager .prev {
+    background-position: 0 0;
+}
+.lps-pager .prev-dis {
+    background-position: 0 -14px !important;
+}*/
+.lps-pager input.txt {
+    width: 25px;
+    margin: 0 5px;
+}
+.lps-pager select {
+    width: 65px;
+}
+.lps-pager span {
+    margin: 0 5px;
+}
+.lps-popups {
+    display: none;
+}
+.lps-footer {
+    background: #f3f3f3;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    text-align: right;
+}
+.lps-footer .lps-link {
+    margin-right: 10px;
+    background: url('../images/buttons/table/lps_grid.png') no-repeat left center;
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #247ac4;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.lps-footer .lps-link:hover {
+    color: #449adc;
+}
+.lps-footer .add-row {
+    background-position: 6px -29px;
+    border-left: 1px solid #247ac4;
+}
+.lps-footer .add-row:hover {
+    background-position: -94px -29px;
+}
+.lps-footer .edit-row {
+    background-position: 6px 2px;
+    border-left: 1px solid #247ac4;
+}
+.lps-footer .edit-row:hover {
+    background-position: -94px 2px;
+}
+.lps-footer .delete-row {
+    background-position: 0 -59px;
+}
+.lps-footer .delete-row:hover {
+    background-position: -100px -59px;
+}
+.lps-footer .disable-row {
+    background-position: 7px -95px;
+}
+.lps-footer .disable-row:hover {
+    background-position: -94px -95px;
+}
+#lpsGrid-add-edit-popup {
+    width: 400px;
+}
+.lps-td-activity {
+    background: url('../images/grid_loader.gif') no-repeat left center;
+    padding-left: 20px;
+    color: #999;
+}
+.lps-row .cell .lps-td-activity {
+    background: url('../images/ajax_cell.gif') no-repeat left center;
+}
+
+/* Popup Buttons */
+.btn-row .sButton {
+    margin-right: 10px;
+}
+.add-btn {
+    background: url(../images/buttons/add_btn.png) no-repeat;
+    width: 114px;
+    height: 27px;
+}
+.cancel-btn {
+    background: url(../images/buttons/cancel_btn.png) no-repeat;
+    width: 114px;
+    height: 27px;
+}
+.edit-btn {
+    background: url(../images/buttons/edit_btn.png) no-repeat;
+    width: 114px;
+    height: 27px;
+}
+.delete-btn {
+    background: url(../images/buttons/delete_btn.png) no-repeat;
+    width: 105px;
+    height: 27px;
+}
+.disable-btn {
+    background: url(../images/buttons/disable_btn.png) no-repeat;
+    width: 114px;
+    height: 27px;
+}
+.enable-btn {
+    background: url(../images/buttons/enable_btn.png) no-repeat;
+    width: 114px;
+    height: 27px;
+}
+#lpsGrid-add-edit-popup label.error {
+    width: 161px !important;
+    margin-left: 164px !important;
+}
+
+h1.popup-error {
+    font-weight: normal;
+    font-size: 18px;
+    color: #922207;
+    margin: 0;
+    padding: 0 10px;
+}
+input.lpsCheck {
+    margin-right: 5px !important;
+}
+
+.no-record {
+    color: #7b7b7b;
+    font-size: 26px;
+    margin: 30px 0;
+    text-align: center;
+}
+.no-record span {
+    padding-left: 30px;
+    background: url(../images/no_data_icon.png) no-repeat left center;
+}
+
+.lpsGrid-overlay {
+    background: #ccc;
+    opacity: .3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.lpsGrid-activity {
+    background: url(../images/grid_loader.gif) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.delete-button {
+    background: url(../images/buttons/common/delete_btn.png) no-repeat !important;
+    width: 105px;
+    height: 27px;
+    margin-right: 10px !important;
+}
+
+.float_left {
+    float: left;
+}
+
+.buttons_left {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.delete-row-btns {
+    margin: 30px 0 0;
+    text-align: center;
+}
